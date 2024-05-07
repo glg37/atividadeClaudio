@@ -809,11 +809,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 1670923666}
   spriteRenderer: {fileID: 1670923667}
-  bullet: {fileID: 7677152697804171422, guid: 44ebc2365df4e1641bdc6393aa1336b3, type: 3}
+  bullet: {fileID: 0}
   foot: {fileID: 1067719471}
   groundCheck: 0
   speed: 5
-  jumpStrength: 5
+  jumpStrength: 3
   bulletSpeed: 8
   horizontal: 0
   body: {fileID: 1670923665}
