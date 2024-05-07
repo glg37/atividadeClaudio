@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PLayer : MonoBehaviour
 {
-    public int life = 3;
-    public int lifeMax;
+    
+    
     public BoxCollider2D boxCollider;
     public SpriteRenderer spriteRenderer;
     public GameObject bullet;
@@ -42,31 +42,6 @@ public class PLayer : MonoBehaviour
             speed = speed * 2;
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            // life--;
-            //life -=1;
-            //life = life -1;
-            life -= collision.gameObject.GetComponent<Enemy>().damage;
-            if (life <= 0)
-            {
-                Destroy(gameObject);
-
-            }
-        }
-
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("cor"))
-        {
-            spriteRenderer.color = Color.red;
-            boxCollider.isTrigger = false;
-        }
-    }
+   
 }
 
